@@ -1,10 +1,12 @@
 name: First Workflow
-on: workflow_dispatch
+on: workflow_dispatch #manuel olarak çalıştırma
 jobs:
   first-job:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest #çalıştırılacak distro
     steps:
       - name: Print greeting
-        run: echo "Hello world"
+        run: | #çoklu komut çalıştırılabilir
+          echo "Hello Bro"
+          echo "Hello world"
       - name: Print goodbye
         run: echo "Goodbye"
